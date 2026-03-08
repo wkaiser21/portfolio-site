@@ -34,7 +34,7 @@ function Experience() {
       <div className="max-w-6x1 mx-auto px-6">
         {/*Header*/}
         <h2 className="text-3x1 font-semibold mb-12">
-          <span className="text-teal-400">Experience</span>
+          <span className="text-blue-400">Experience</span>
         </h2>
         <div className="grid md:grid-cols-[200px_1fr] gap-10">
           {/* Left side - Company list */}
@@ -46,7 +46,7 @@ function Experience() {
                 className={`cursor-pointer text-left px-4 py-3 transition
                   ${
                     selectedJob === index
-                      ? "border-l-2 border-teal-400 text-teal-400"
+                      ? "border-l-2 border-blue-400 text-blue-400"
                       : "text-gray-400"
                   }
                 `}
@@ -60,7 +60,7 @@ function Experience() {
           <div>
             <h3 className="text-xl font-semibold mb-1">
               {jobs[selectedJob].role}{" "}
-              <span className="text-teal-400">
+              <span className="text-blue-400">
                 @ {jobs[selectedJob].company}
               </span>
             </h3>
@@ -70,7 +70,7 @@ function Experience() {
             <ul className="space-y-4">
               {jobs[selectedJob].points.map((point, i) => (
                 <li key={i} className="flex text-gray-300">
-                  <span className="text-teal-400 mr-3">▹</span>
+                  <span className="text-blue-400 mr-3">▹</span>
                   {point}
                 </li>
               ))}
