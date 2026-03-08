@@ -19,19 +19,19 @@ function About() {
             <p className="text-gray-400 mb-6">Technologies I've worked with:</p>
             {/* Technology List */}
             <ul className="grid grid-cols-2 gap-3 text-gray-400">
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Java</li>
-              <li>React.js</li>
-              <li>SQL</li>
-              <li>REST APIs</li>
+              <li>▹ JavaScript</li>
+              <li>▹ TypeScript</li>
+              <li>▹ Java</li>
+              <li>▹ React.js</li>
+              <li>▹ SQL</li>
+              <li>▹ REST APIs</li>
             </ul>
           </div>
 
           {/* Right Side Image */}
           <div className="flex justify-center">
             <img
-              src="/public/94586140.jpg"
+              src="/94586140.jpg"
               alt="Wyatt"
               className="w-72 rounded-lg shadow-lg"
             />

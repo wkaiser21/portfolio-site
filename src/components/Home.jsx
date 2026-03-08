@@ -8,7 +8,7 @@ function Home() {
         {/* Left Side Image*/}
         <div className="flex justify-center">
           <img
-            src="/public/94586140.jpg"
+            src="/94586140.jpg"
             alt="Wyatt"
             className="w-64 h-64 object-cover rounded-full border-4 border-teal-400"
           />
