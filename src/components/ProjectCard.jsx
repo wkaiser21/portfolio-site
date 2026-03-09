@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function ProjectCard({ title, description, tech, github, slug }) {
   return (
     <Link to={`/projects/${slug}`}>
-      <div className="relative bg-slate-800 rounded-xl p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer">
+      <div className="relative bg-slate-800 rounded-xl p-6 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-400/40 transition-all duration-300 cursor-pointer">
         {/* Github Button */}
         <a
           href={github}
