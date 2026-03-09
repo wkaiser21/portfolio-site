@@ -22,7 +22,7 @@ function ProjectCard({ tittle, description, tech, github, slug }) {
         <p className="text-gray-400 text-sm mb-4">{description}</p>
 
         {/* Tech Stack */}
-        <div className="flex flex-wrap gap-2 text-xs text-teal-400">
+        <div className="flex flex-wrap gap-2 text-xs text-blue-400">
           {tech.map((item, index) => (
             <span key={index}>{item}</span>
           ))}
