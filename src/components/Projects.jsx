@@ -29,18 +29,20 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
-      {/* Section Header */}
-      <div className="flex items-center gap-4 mb-12">
-        <h2 className="text-2xl font-semibold text-white">Projects</h2>
-        <div className="flex-1 h-px bg-slate-700"></div>
-      </div>
+    <section id="projects" className="bg-slate-900 py-20">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Section Header */}
+        <div className="flex items-center gap-4 mb-12">
+          <h2 className="text-2xl font-semibold text-white">Projects</h2>
+          <div className="flex-1 h-px bg-slate-700"></div>
+        </div>
 
-      {/* Grid of Cards */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
+        {/* Grid of Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
       </div>
     </section>
   );

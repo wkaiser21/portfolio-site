@@ -3,7 +3,7 @@ import { useState } from "react";
 const jobs = [
   {
     company: "Drexel College of Medicine",
-    role: "Web Developer",
+    role: "Web Developer Co-Op",
     date: "April 2023 - September 2023",
     points: [
       "Resolved and managed web application support tickets, collaborating with cross-functional teams to maintain system reliability and user satisfaction",
@@ -11,17 +11,6 @@ const jobs = [
       "Developed and maintained interactive learning modules aligned with Agile and SDLC practices",
       "Expanded backend functionality in C# withing a three-tier .NET architecture to support new platform features",
       "Partnered with stakeholders to translate functional requirements into deployable application updates",
-    ],
-  },
-  {
-    company: "Drexel University",
-    role: "IT Support Specialist",
-    date: "September 2022 - April 2023",
-    points: [
-      "Provided technical support to over 500 students and faculty, resolving hardware and software issues with a 95% satisfaction rate",
-      "Managed and maintained computer labs, ensuring all systems were up-to-date and functional for academic use",
-      "Conducted training sessions on software applications, improving user proficiency and reducing support requests by 20%",
-      "Collaborated with the IT team to implement new technologies, enhancing the overall efficiency of campus IT services",
     ],
   },
 ];
