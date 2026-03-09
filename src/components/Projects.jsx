@@ -29,10 +29,10 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="max-w-6x1 mx-auto px-6 py-20">
+    <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
       {/* Section Header */}
       <div className="flex items-center gap-4 mb-12">
-        <h2 className="text-2x1 font-semibold text-white">Projects</h2>
+        <h2 className="text-2xl font-semibold text-white">Projects</h2>
         <div className="flex-1 h-px bg-slate-700"></div>
       </div>
 

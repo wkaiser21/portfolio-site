@@ -1,9 +1,9 @@
 function About() {
   return (
     <section id="about" className="bg-slate-900 text-white py-24">
-      <div className="max-w-6x1 mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Section Title */}
-        <h2 className="text-3x1 font-semibold mb-12">About Me</h2>
+        <h2 className="text-3xl font-semibold mb-12">About Me</h2>
 
         {/* About Content */}
         <div className="grid md:grid-cols-2 gap-12 items-center">

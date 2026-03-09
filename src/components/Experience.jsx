@@ -31,9 +31,9 @@ function Experience() {
 
   return (
     <section id="experience" className="bg-slate-900 text-white py-24">
-      <div className="max-w-6x1 mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         {/*Header*/}
-        <h2 className="text-3x1 font-semibold mb-12">
+        <h2 className="text-3xl font-semibold mb-12">
           <span className="text-blue-400">Experience</span>
         </h2>
         <div className="grid md:grid-cols-[200px_1fr] gap-10">
