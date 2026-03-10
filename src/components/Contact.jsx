@@ -8,7 +8,7 @@ function Contact() {
         href="mailto:wyatt.kaiser@outlook.com"
         className="hover:text-blue-400 transition"
       >
-        <IoIosMail />
+        <IoIosMail size={24} />
       </a>
       <a
         href="https://www.linkedin.com/in/wyatt-kaiser"
@@ -16,7 +16,7 @@ function Contact() {
         rel="noopener noreferrer"
         className="hover:text-blue-400 transition"
       >
-        <FaLinkedin />
+        <FaLinkedin size={24} />
       </a>
       <a
         href="https://github.com/wkaiser21"
@@ -24,7 +24,7 @@ function Contact() {
         rel="noopener noreferrer"
         className="hover:text-blue-400 transition"
       >
-        <FaGithub />
+        <FaGithub size={24} />
       </a>
     </div>
   );

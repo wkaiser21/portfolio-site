@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 
 function ProjectCard({ title, description, tech, github, slug }) {
   return (
@@ -12,7 +13,7 @@ function ProjectCard({ title, description, tech, github, slug }) {
           className="absolute top-4 right-4 text-gray-400 hover:text-blue-400"
           onClick={(e) => e.stopPropagation()}
         >
-          GitHub
+          <FaGithub size={24} />
         </a>
 
         {/* Project Title */}
