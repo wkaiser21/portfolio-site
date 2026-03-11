@@ -35,7 +35,7 @@ function About() {
           {/* Right Side Image */}
           <div className="flex justify-center">
             <img
-              src="/94586140.jpg"
+              src="/coding_image.png"
               alt="Wyatt"
               className="w-72 rounded-lg shadow-lg"
             />

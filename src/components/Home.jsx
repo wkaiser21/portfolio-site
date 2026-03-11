@@ -11,7 +11,7 @@ function Home() {
           <img
             src="/94586140.jpg"
             alt="Wyatt"
-            className="w-64 h-64 object-cover rounded-full border-4 border-blue-400"
+            className="w-72 rounded-lg shadow-lg"
           />
         </div>
 
