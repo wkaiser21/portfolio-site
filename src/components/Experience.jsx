@@ -21,7 +21,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="bg-slate-900 text-white py-24"
+      className="bg-slate-900 text-white py-24 min-h-screen"
       data-aos="fade-up"
     >
       <div className="max-w-6xl mx-auto px-6">
