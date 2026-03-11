@@ -7,4 +7,5 @@ html {
 
 body {
   @apply bg-slate-900 text-white;
+  font-family: "Inter", sans-serif;
 }
