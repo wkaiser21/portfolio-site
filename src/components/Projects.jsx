@@ -29,7 +29,7 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="bg-slate-900 py-20">
+    <section id="projects" className="bg-slate-900 py-20" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12">

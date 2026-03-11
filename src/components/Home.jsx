@@ -3,6 +3,7 @@ function Home() {
     <section
       id="home"
       className="min-h-screen bg-slate-900 text-white flex items-center"
+      data-aos="fade-up"
     >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Side Image*/}

@@ -19,7 +19,11 @@ function Experience() {
   const [selectedJob, setSelectedJob] = useState(0);
 
   return (
-    <section id="experience" className="bg-slate-900 text-white py-24">
+    <section
+      id="experience"
+      className="bg-slate-900 text-white py-24"
+      data-aos="fade-up"
+    >
       <div className="max-w-6xl mx-auto px-6">
         {/*Header*/}
         <h2 className="text-3xl font-semibold mb-12">

@@ -1,6 +1,10 @@
 function About() {
   return (
-    <section id="about" className="bg-slate-900 text-white py-24">
+    <section
+      id="about"
+      className="bg-slate-900 text-white py-24"
+      data-aos="fade-up"
+    >
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Title */}
         <h2 className="text-3xl font-semibold mb-12">About Me</h2>
