@@ -29,6 +29,10 @@ function About() {
               <li>▹ React.js</li>
               <li>▹ SQL</li>
               <li>▹ REST APIs</li>
+              <li>▹ React Native</li>
+              <li>▹ C#</li>
+              <li>▹ .NET</li>
+              <li>▹ Python</li>
             </ul>
           </div>
 
