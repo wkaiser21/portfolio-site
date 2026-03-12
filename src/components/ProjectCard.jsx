@@ -39,7 +39,7 @@ function ProjectCard({ title, description, tech, github, slug, live }) {
         <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
 
         {/* Description */}
-        <p className="text-gray-400 text-sm mb-4 flex-grow">{description}</p>
+        <p className="text-gray-400 text-sm mb-4 grow">{description}</p>
 
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 text-xs text-blue-400">
