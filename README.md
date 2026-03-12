@@ -13,5 +13,9 @@ The site showcases my technical skills, experience, and projects.
 </ul>  
 
 ## Running Locally  
-npm install  
+```sh
+npm install
+```
+```sh
 npm run dev
+```
