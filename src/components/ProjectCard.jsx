@@ -6,7 +6,7 @@ import { FiFolder } from "react-icons/fi";
 function ProjectCard({ title, description, tech, github, slug, live }) {
   return (
     <Link to={`/projects/${slug}`}>
-      <div className="relative bg-slate-800 rounded-xl p-6 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-400/40 transition-all duration-300 cursor-pointer">
+      <div className="relative bg-slate-800 rounded-xl p-6 flex flex-col h-full hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-400/40 transition-all duration-300 cursor-pointer">
         <FiFolder className="text-blue-400 mb-4" size={30} />
         {/* Icon Container */}
         <div className="absolute top-4 right-4 flex gap-3">
@@ -39,12 +39,17 @@ function ProjectCard({ title, description, tech, github, slug, live }) {
         <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
 
         {/* Description */}
-        <p className="text-gray-400 text-sm mb-4">{description}</p>
+        <p className="text-gray-400 text-sm mb-4 flex-grow">{description}</p>
 
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 text-xs text-blue-400">
           {tech.map((item, index) => (
-            <span key={index}>{item}</span>
+            <span
+              key={index}
+              className="bg-slate-700 px-2 py-1 rounded text-blue-400"
+            >
+              {item}
+            </span>
           ))}
         </div>
       </div>
