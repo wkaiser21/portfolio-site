@@ -34,6 +34,14 @@ function Projects() {
       github: "https://github.com/wkaiser21/GameOfLife",
       live: "https://wkaiser21.github.io/GameOfLife/",
     },
+    {
+      title: "Rate My Route",
+      slug: "rate-my-route",
+      description:
+        "Figma prototype project of an app to rate and review travel routes for Philadelphia commuters",
+      tech: ["Figma"],
+      live: "https://www.figma.com/proto/oP85PlOTYUVbfwKaT0GD8U/High-Fidelity-Prototype?node-id=2-2&starting-point-node-id=2%3A2",
+    },
   ];
 
   return (
