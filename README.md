@@ -10,6 +10,7 @@ The site showcases my technical skills, experience, and projects.
   <li>React</li>
   <li>Vite</li>
   <li>Tailwind CSS</li>
+  <li>Node.js/npm</li>
 </ul>  
 
 ## Running Locally  
