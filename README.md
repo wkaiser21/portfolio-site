@@ -1,22 +1,29 @@
 # Personal Developer Portfolio
 
 My developer portfolio built with React and Vite.  
-The site showcases my technical skills, experience, and projects.  
+The site showcases my technical skills, experience, and projects.
 
-🌐 Live Site: <a href="wyattskaiser.com" alt="Wyatt Kaiser Portfolio Website" target="_blank" rel="noopener noreferrer">wyattskaiser.com</a>  
+<p align="center">
+  <img src="public/portfolio_site_.png" width="700">
+</p>
 
-## Tech Stack  
+🌐 Live Site: <a href="wyattskaiser.com" alt="Wyatt Kaiser Portfolio Website" target="_blank" rel="noopener noreferrer">wyattskaiser.com</a>
+
+## Tech Stack
+
 <ul>
   <li>React</li>
   <li>Vite</li>
   <li>Tailwind CSS</li>
   <li>Node.js/npm</li>
-</ul>  
+</ul>
 
-## Running Locally  
+## Running Locally
+
 ```sh
 npm install
 ```
+
 ```sh
 npm run dev
 ```
