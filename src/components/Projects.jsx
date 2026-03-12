@@ -26,6 +26,14 @@ function Projects() {
       tech: ["JavaScript", "HTML/CSS", "SQL"],
       github: "https://github.com/wkaiser21/CryptoHub",
     },
+    {
+      title: "Conway's Game of Life",
+      slug: "conway-game-of-life",
+      description: "Game of Life simulation made in JavaScript",
+      tech: ["JavaScript", "HTML", "CSS"],
+      github: "https://github.com/wkaiser21/GameOfLife",
+      live: "https://wkaiser21.github.io/GameOfLife/",
+    },
   ];
 
   return (
