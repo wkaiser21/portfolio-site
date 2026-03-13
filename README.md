@@ -5,7 +5,7 @@ The site showcases my technical skills, experience, and projects.
   
 <img width="1306" alt="Portfolio Preview Image" src="public/portfolio_site.png">
 
-🌐 Live Site: <a href="https//wyattskaiser.com" alt="Wyatt Kaiser Portfolio Website" target="_blank" rel="noopener noreferrer">wyattskaiser.com</a>
+🌐 Live Site: <a href="https://wyattskaiser.com" alt="Wyatt Kaiser Portfolio Website" target="_blank" rel="noopener noreferrer">wyattskaiser.com</a>
 
 ## Tech Stack
 
