@@ -4,7 +4,7 @@ function Projects() {
   const projects = [
     {
       title: "Senior Capstone",
-      slug: "senior-capstone",
+      image: "/project-images/senior-capstone.png",
       description:
         "Mobile application designed to scan and grade trading cards",
       tech: ["React Native", "JavaScript", "PostgreSQL", "Firebase"],
@@ -12,7 +12,7 @@ function Projects() {
     },
     {
       title: "Concert Connect",
-      slug: "concert-connect",
+      image: "/project-images/concert-connect.png",
       description:
         "One stop shop for concert goers to find concerts, buy tickers, and book hotels",
       tech: ["React.js", "TypeScript", "Node.js", "SQLite", "REST API"],
@@ -20,7 +20,7 @@ function Projects() {
     },
     {
       title: "Crypto Hub",
-      slug: "crypto-hub",
+      image: "/project-images/crypto-hub.png",
       description:
         "Website to track your crypto investments and view historical data",
       tech: ["JavaScript", "HTML/CSS", "SQL"],
@@ -28,7 +28,7 @@ function Projects() {
     },
     {
       title: "Conway's Game of Life",
-      slug: "conway-game-of-life",
+      image: "/project-images/game-of-life.png",
       description: "Game of Life simulation made in JavaScript",
       tech: ["JavaScript", "HTML", "CSS"],
       github: "https://github.com/wkaiser21/GameOfLife",
@@ -36,7 +36,7 @@ function Projects() {
     },
     {
       title: "Rate My Route",
-      slug: "rate-my-route",
+      image: "/project-images/rate-my-route.png",
       description:
         "Figma prototype project of an app to rate and review travel routes for Philadelphia commuters",
       tech: ["Figma"],
@@ -47,20 +47,26 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-slate-900 py-20 min-h-screen"
+      className="bg-slate-950 py-24 text-white"
       data-aos="fade-up"
     >
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Section Header */}
-        <div className="flex items-center gap-4 mb-12">
-          <h2 className="text-2xl font-semibold text-white">Projects</h2>
-          <div className="flex-1 h-px bg-slate-700"></div>
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-end justify-between gap-6 mb-12">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-blue-400 mb-3">
+              Selected work
+            </p>
+            <h2 className="text-4xl md:text-5xl font-semibold">Projects</h2>
+          </div>
+          <p className="hidden md:block max-w-xs text-right text-sm leading-relaxed text-slate-400">
+            A closer look at the products, experiments, and interfaces I have
+            built.
+          </p>
         </div>
 
-        {/* Grid of Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="space-y-10">
           {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+            <ProjectCard key={project.title} {...project} index={index} />
           ))}
         </div>
       </div>
