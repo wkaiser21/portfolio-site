@@ -1,6 +1,6 @@
 # Personal Developer Portfolio
 
-My developer portfolio built with React and Vite.  
+My developer portfolio built with React.js.  
 The site showcases my technical skills, experience, and projects.  
   
 <img width="1306" alt="Portfolio Preview Image" src="public/portfolio_site.png">
