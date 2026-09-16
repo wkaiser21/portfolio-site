@@ -28,7 +28,7 @@ function Projects() {
     },
     {
       title: "Conway's Game of Life",
-      images: ["/project-images/game-of-life.png"],
+      images: ["/project-images/conway/conway-gif.gif"],
       description: "Game of Life simulation made in JavaScript",
       tech: ["JavaScript", "HTML", "CSS"],
       github: "https://github.com/wkaiser21/GameOfLife",
