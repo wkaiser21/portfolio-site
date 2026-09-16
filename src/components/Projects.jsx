@@ -3,16 +3,16 @@ import ProjectCard from "./ProjectCard";
 function Projects() {
   const projects = [
     {
-      title: "Senior Capstone",
-      image: "/project-images/senior-capstone.png",
+      title: "Senior Capstone Card App",
+      images: ["/project-images/senior/senior-capstone1.jpg", "/project-images/senior/senior-capstone2.jpg", "/project-images/senior/senior-capstone3.jpg", "/project-images/senior/senior-capstone4.jpg"],
       description:
-        "Mobile application designed to scan and grade trading cards",
+        "Mobile application designed to scan, grade, and store sports trading cards.",
       tech: ["React Native", "JavaScript", "PostgreSQL", "Firebase"],
       github: "https://github.com/NizomDjuraev/CardScanAndGrade",
     },
     {
       title: "Concert Connect",
-      image: "/project-images/concert-connect.png",
+      images: ["/project-images/concert-connect.png"],
       description:
         "One stop shop for concert goers to find concerts, buy tickers, and book hotels",
       tech: ["React.js", "TypeScript", "Node.js", "SQLite", "REST API"],
@@ -20,7 +20,7 @@ function Projects() {
     },
     {
       title: "Crypto Hub",
-      image: "/project-images/crypto-hub.png",
+      images: ["/project-images/crypto-hub.png"],
       description:
         "Website to track your crypto investments and view historical data",
       tech: ["JavaScript", "HTML/CSS", "SQL"],
@@ -28,7 +28,7 @@ function Projects() {
     },
     {
       title: "Conway's Game of Life",
-      image: "/project-images/game-of-life.png",
+      images: ["/project-images/game-of-life.png"],
       description: "Game of Life simulation made in JavaScript",
       tech: ["JavaScript", "HTML", "CSS"],
       github: "https://github.com/wkaiser21/GameOfLife",
@@ -36,7 +36,7 @@ function Projects() {
     },
     {
       title: "Rate My Route",
-      image: "/project-images/rate-my-route.png",
+      images: ["/project-images/rate-my-route.png"],
       description:
         "Figma prototype project of an app to rate and review travel routes for Philadelphia commuters",
       tech: ["Figma"],
@@ -53,9 +53,6 @@ function Projects() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-end justify-between gap-6 mb-12">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-blue-400 mb-3">
-              Selected work
-            </p>
             <h2 className="text-4xl md:text-5xl font-semibold">Projects</h2>
           </div>
           <p className="hidden md:block max-w-xs text-right text-sm leading-relaxed text-slate-400">

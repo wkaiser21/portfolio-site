@@ -9,3 +9,40 @@ body {
   @apply bg-slate-900 text-white;
   font-family: "Inter", sans-serif;
 }
+
+@keyframes project-slide-next {
+  from {
+    opacity: 0;
+    transform: translateX(8%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes project-slide-previous {
+  from {
+    opacity: 0;
+    transform: translateX(-8%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.project-image-slide-next {
+  animation: project-slide-next 350ms ease-out;
+}
+
+.project-image-slide-previous {
+  animation: project-slide-previous 350ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-image-slide-next,
+  .project-image-slide-previous {
+    animation: none;
+  }
+}
