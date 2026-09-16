@@ -4,14 +4,16 @@ function Projects() {
   const projects = [
     {
       title: "Senior Capstone Card App",
+      category: "Mobile App Development",
       images: ["/project-images/senior/senior-capstone1.jpg", "/project-images/senior/senior-capstone2.jpg", "/project-images/senior/senior-capstone3.jpg", "/project-images/senior/senior-capstone4.jpg"],
       description:
-        "Mobile application designed to scan, grade, and store sports trading cards.",
+        "Mobile application designed to scan, grade, and store sports trading cards",
       tech: ["React Native", "JavaScript", "PostgreSQL", "Firebase"],
       github: "https://github.com/NizomDjuraev/CardScanAndGrade",
     },
     {
       title: "Concert Connect",
+      category: "Web Development",
       images: ["/project-images/concert-connect.png"],
       description:
         "One stop shop for concert goers to find concerts, buy tickers, and book hotels",
@@ -20,6 +22,7 @@ function Projects() {
     },
     {
       title: "Crypto Hub",
+      category: "Web Development",
       images: ["/project-images/crypto-hub.png"],
       description:
         "Website to track your crypto investments and view historical data",
@@ -28,6 +31,7 @@ function Projects() {
     },
     {
       title: "Conway's Game of Life",
+      category: "Web Development",
       images: ["/project-images/conway/conway-gif.gif"],
       description: "Game of Life simulation made in JavaScript",
       tech: ["JavaScript", "HTML", "CSS"],
@@ -36,9 +40,10 @@ function Projects() {
     },
     {
       title: "Rate My Route",
-      images: ["/project-images/rate-my-route.png"],
+      category: "UX/UI Design",
+      images: ["/project-images/ratemyroute/rmr1.png", "/project-images/ratemyroute/rmr2.png", "/project-images/ratemyroute/rmr3.png", "/project-images/ratemyroute/rmr4.png", "/project-images/ratemyroute/rmr5.png", "/project-images/ratemyroute/rmr6.png"],
       description:
-        "Figma prototype project of an app to rate and review travel routes for Philadelphia commuters",
+        "Figma prototype project of an app to rate and review travel routes for commuters",
       tech: ["Figma"],
       live: "https://www.figma.com/proto/oP85PlOTYUVbfwKaT0GD8U/High-Fidelity-Prototype?node-id=2-2&starting-point-node-id=2%3A2",
     },

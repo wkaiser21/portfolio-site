@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiChevronLeft, FiChevronRight, FiExternalLink } from "react-icons/fi";
 import { useState } from "react";
 
-function ProjectCard({ title, description, tech, github, live, image, images = [], index }) {
+function ProjectCard({ title, category, description, tech, github, live, image, images = [], index }) {
   const projectImages = images.length > 0 ? images : image ? [image] : [];
   const [activeImage, setActiveImage] = useState(0);
   const [slideDirection, setSlideDirection] = useState("next");
@@ -98,7 +98,7 @@ function ProjectCard({ title, description, tech, github, live, image, images = [
 
       <div className="max-w-xl py-4">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-blue-400">
-          0{index + 1} / Mobile App Development
+          0{index + 1} / {category}
         </p>
         <h3 className="mb-5 text-3xl font-semibold text-white md:text-4xl">
           {title}
