@@ -10,7 +10,7 @@ const jobs = [
     points: [
       "Resolved and managed web application support tickets, collaborating with cross-functional teams to maintain system reliability and user satisfaction",
       "Enhanced UI workflows using JavaScript, improving clariity and usability in our internal healthcare learning web app platform for students",
-      "Developed and maintained interactive learning modules using JavaScript and C#, aligned with Agile and SDLC practices",
+      "Developed and maintained 44 interactive learning modules that are used by over 300 institutions, constructed with JavaScript and C# aligned with Agile and SDLC practices",
       "Expanded backend functionality in C# in a three-tier .NET architecture to support new platform features",
       "Communicated with stakeholders to translate functional requirements into deployable application updates",
     ],
