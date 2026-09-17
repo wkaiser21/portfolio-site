@@ -23,9 +23,9 @@ function Projects() {
     {
       title: "Crypto Hub",
       category: "Web Development",
-      images: ["/project-images/crypto-hub.png"],
+      images: ["/project-images/cryptohub/ch1.png", "/project-images/cryptohub/ch2.png", "/project-images/cryptohub/ch3.png", "/project-images/cryptohub/ch4.png", "/project-images/cryptohub/ch5.png"],
       description:
-        "Website to track your crypto investments and view historical data",
+        "Website to simulate crypto investments and view historical data",
       tech: ["JavaScript", "HTML/CSS", "PostgreSQL"],
       github: "https://github.com/wkaiser21/CryptoHub",
     },
