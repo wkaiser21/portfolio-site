@@ -26,7 +26,7 @@ function Projects() {
       images: ["/project-images/crypto-hub.png"],
       description:
         "Website to track your crypto investments and view historical data",
-      tech: ["JavaScript", "HTML/CSS", "SQL"],
+      tech: ["JavaScript", "HTML/CSS", "PostgreSQL"],
       github: "https://github.com/wkaiser21/CryptoHub",
     },
     {
