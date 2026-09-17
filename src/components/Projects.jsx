@@ -52,7 +52,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-slate-950 py-24 text-white"
+      className="bg-slate-900 py-24 text-white"
       data-aos="fade-up"
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -71,6 +71,10 @@ function Projects() {
             <ProjectCard key={project.title} {...project} index={index} />
           ))}
         </div>
+
+        <footer className="mt-20 border-t border-slate-800 pt-6 text-center text-sm text-slate-400">
+          Built by Wyatt Kaiser
+        </footer>
       </div>
     </section>
   );

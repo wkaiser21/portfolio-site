@@ -25,7 +25,7 @@ function ProjectCard({ title, category, description, tech, github, live, image, 
 
   return (
     <article
-      className={`group grid min-h-[70vh] items-center gap-10 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/70 p-5 md:grid-cols-2 md:p-10 lg:gap-20 ${
+      className={`group grid min-h-[70vh] items-center gap-10 overflow-hidden rounded-2xl border border-slate-700 bg-slate-800 p-5 md:grid-cols-2 md:p-10 lg:gap-20 ${
         isReversed ? "md:[&>*:first-child]:order-2" : ""
       }`}
       data-aos="fade-up"
