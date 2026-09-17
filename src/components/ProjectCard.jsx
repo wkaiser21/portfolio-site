@@ -30,7 +30,7 @@ function ProjectCard({ title, category, description, tech, github, live, image, 
       }`}
       data-aos="fade-up"
     >
-      <div className="relative flex aspect-square items-center justify-center overflow-hidden rounded-xl border border-slate-700 bg-slate-800 p-4">
+      <div className="relative flex aspect-square items-center justify-center overflow-hidden">
         {projectImages.length > 0 ? (
           <>
             <img
