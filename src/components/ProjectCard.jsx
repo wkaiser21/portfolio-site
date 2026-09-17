@@ -73,6 +73,7 @@ function ProjectCard({ title, category, description, tech, github, live, image, 
                       key={projectImage}
                       type="button"
                       onClick={() => {
+                        if (imageIndex === activeImage) return;
                         setSlideDirection(imageIndex > activeImage ? "next" : "previous");
                         setActiveImage(imageIndex);
                       }}

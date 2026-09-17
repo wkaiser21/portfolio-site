@@ -1,19 +1,93 @@
 import { useState } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const jobs = [
   {
     company: "Drexel College of Medicine",
-    role: "Web Developer Co-Op",
+    role: "Web Developer/Helpdesk Support Co-Op",
     date: "April 2023 - September 2023",
+    images: ["/project-images/cpch/cpch1.png", "/project-images/cpch/cpch2.png", "/project-images/cpch/cpch3.png", "/project-images/cpch/cpch4.png",],
     points: [
       "Resolved and managed web application support tickets, collaborating with cross-functional teams to maintain system reliability and user satisfaction",
-      "Enhanced UI workflows using JavaScript, improving clariity and usability across internal healthcare learning platforms",
-      "Developed and maintained interactive learning modules aligned with Agile and SDLC practices",
-      "Expanded backend functionality in C# withing a three-tier .NET architecture to support new platform features",
-      "Partnered with stakeholders to translate functional requirements into deployable application updates",
+      "Enhanced UI workflows using JavaScript, improving clariity and usability in our internal healthcare learning web app platform for students",
+      "Developed and maintained interactive learning modules using JavaScript and C#, aligned with Agile and SDLC practices",
+      "Expanded backend functionality in C# in a three-tier .NET architecture to support new platform features",
+      "Communicated with stakeholders to translate functional requirements into deployable application updates",
     ],
   },
 ];
+
+function ExperienceGallery({ images, company }) {
+  const [activeImage, setActiveImage] = useState(0);
+  const hasImages = images.length > 0;
+  const hasMultipleImages = images.length > 1;
+
+  const showPreviousImage = () => {
+    setActiveImage((currentImage) =>
+      currentImage === 0 ? images.length - 1 : currentImage - 1,
+    );
+  };
+
+  const showNextImage = () => {
+    setActiveImage((currentImage) =>
+      currentImage === images.length - 1 ? 0 : currentImage + 1,
+    );
+  };
+
+  return (
+    <div className="relative mt-10 flex aspect-video items-center justify-center overflow-hidden">
+      {hasImages ? (
+        <img
+          key={images[activeImage]}
+          src={images[activeImage]}
+          alt={`${company} work screenshot ${activeImage + 1}`}
+          className="h-full w-full object-contain experience-image-slide"
+        />
+      ) : (
+        <div className="text-center text-slate-500">
+          <span className="mb-3 block text-5xl font-semibold text-slate-700">
+            {company.charAt(0)}
+          </span>
+          <span className="text-sm">Add workplace screenshots</span>
+        </div>
+      )}
+
+      {hasMultipleImages && (
+        <>
+          <button
+            type="button"
+            onClick={showPreviousImage}
+            aria-label={`Show previous ${company} screenshot`}
+            className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-slate-950/80 p-2 text-white transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+            <FiChevronLeft size={24} />
+          </button>
+          <button
+            type="button"
+            onClick={showNextImage}
+            aria-label={`Show next ${company} screenshot`}
+            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-slate-950/80 p-2 text-white transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+            <FiChevronRight size={24} />
+          </button>
+          <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-slate-950/75 px-3 py-2">
+            {images.map((image, imageIndex) => (
+              <button
+                key={image}
+                type="button"
+                onClick={() => setActiveImage(imageIndex)}
+                aria-label={`Show screenshot ${imageIndex + 1}`}
+                className={`h-2 w-2 rounded-full transition ${
+                  imageIndex === activeImage ? "bg-blue-400" : "bg-slate-500"
+                }`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
 
 function Experience() {
   const [selectedJob, setSelectedJob] = useState(0);
@@ -37,6 +111,7 @@ function Experience() {
                 key={index}
                 onClick={() => setSelectedJob(index)}
                 className={`cursor-pointer text-left px-4 py-3 transition
+                  if (imageIndex === activeImage) return;
                   ${
                     selectedJob === index
                       ? "border-l-2 border-blue-400 text-blue-400"
@@ -68,6 +143,12 @@ function Experience() {
                 </li>
               ))}
             </ul>
+
+            <ExperienceGallery
+              key={selectedJob}
+              images={jobs[selectedJob].images}
+              company={jobs[selectedJob].company}
+            />
           </div>
         </div>
       </div>

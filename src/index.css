@@ -40,9 +40,14 @@ body {
   animation: project-slide-previous 350ms ease-out;
 }
 
+.experience-image-slide {
+  animation: project-slide-next 350ms ease-out;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .project-image-slide-next,
-  .project-image-slide-previous {
+  .project-image-slide-previous,
+  .experience-image-slide {
     animation: none;
   }
 }
