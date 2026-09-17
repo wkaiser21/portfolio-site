@@ -58,7 +58,7 @@ function ExperienceGallery({ images, company }) {
             type="button"
             onClick={showPreviousImage}
             aria-label={`Show previous ${company} screenshot`}
-            className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-slate-950/80 p-2 text-white transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-white/70 bg-white/90 p-2 text-slate-950 shadow-lg shadow-slate-950/30 backdrop-blur-sm transition hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-white"
           >
             <FiChevronLeft size={24} />
           </button>
@@ -66,11 +66,11 @@ function ExperienceGallery({ images, company }) {
             type="button"
             onClick={showNextImage}
             aria-label={`Show next ${company} screenshot`}
-            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-slate-950/80 p-2 text-white transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-white/70 bg-white/90 p-2 text-slate-950 shadow-lg shadow-slate-950/30 backdrop-blur-sm transition hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-white"
           >
             <FiChevronRight size={24} />
           </button>
-          <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-slate-950/75 px-3 py-2">
+          <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full border border-white/40 bg-slate-950/70 px-3 py-2 shadow-lg backdrop-blur-sm">
             {images.map((image, imageIndex) => (
               <button
                 key={image}
@@ -78,7 +78,7 @@ function ExperienceGallery({ images, company }) {
                 onClick={() => setActiveImage(imageIndex)}
                 aria-label={`Show screenshot ${imageIndex + 1}`}
                 className={`h-2 w-2 rounded-full transition ${
-                  imageIndex === activeImage ? "bg-blue-400" : "bg-slate-500"
+                  imageIndex === activeImage ? "bg-white" : "bg-slate-400"
                 }`}
               />
             ))}
