@@ -16,7 +16,7 @@ function Projects() {
       category: "Web Development",
       images: ["/project-images/concert-connect.png"],
       description:
-        "One stop shop for concert goers to find concerts, buy tickers, and book hotels",
+        "One stop shop for concert goers to find concerts, buy tickets, and book hotels",
       tech: ["React.js", "TypeScript", "Node.js", "SQLite", "REST API"],
       github: "https://github.com/LukeMatheson/ConcertConnect",
     },
