@@ -11,7 +11,7 @@ function Home() {
           <img
             src="/94586140.jpg"
             alt="Wyatt"
-            className="w-72 rounded-lg shadow-lg"
+            className="w-80 rounded-lg shadow-lg"
           />
         </div>
 

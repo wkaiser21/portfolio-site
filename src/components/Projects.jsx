@@ -14,11 +14,11 @@ function Projects() {
     {
       title: "Concert Connect",
       category: "Web Development",
-      images: ["/project-images/concert-connect.png"],
+      images: ["/project-images/concertconnect/cc1.png", "/project-images/concertconnect/cc2.png", "/project-images/concertconnect/cc3.png", "/project-images/concertconnect/cc4.png", "/project-images/concertconnect/cc5.png", "/project-images/concertconnect/cc6.png"],
       description:
         "One stop shop for concert goers to find concerts, buy tickets, and book hotels",
       tech: ["React.js", "TypeScript", "Node.js", "SQLite", "REST API"],
-      github: "https://github.com/LukeMatheson/ConcertConnect",
+      github: "https://github.com/wkaiser21/ConcertConnect",
     },
     {
       title: "Crypto Hub",
