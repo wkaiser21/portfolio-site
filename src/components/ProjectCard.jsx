@@ -1,11 +1,13 @@
 import { FaGithub } from "react-icons/fa";
-import { FiChevronLeft, FiChevronRight, FiExternalLink } from "react-icons/fi";
-import { useState } from "react";
+import { FiChevronLeft, FiChevronRight, FiExternalLink, FiX } from "react-icons/fi";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 function ProjectCard({ title, category, description, tech, github, live, image, images = [], index }) {
   const projectImages = images.length > 0 ? images : image ? [image] : [];
   const [activeImage, setActiveImage] = useState(0);
   const [slideDirection, setSlideDirection] = useState("next");
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const isReversed = index % 2 === 1;
   const hasMultipleImages = projectImages.length > 1;
 
@@ -23,6 +25,24 @@ function ProjectCard({ title, category, description, tech, github, live, image, 
     );
   };
 
+  useEffect(() => {
+    if (!isLightboxOpen) return undefined;
+
+    const closeWithEscape = (event) => {
+      if (event.key === "Escape") setIsLightboxOpen(false);
+    };
+
+    const originalOverflow = document.body.style.overflow;
+
+    document.addEventListener("keydown", closeWithEscape);
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", closeWithEscape);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [isLightboxOpen]);
+
   return (
     <article
       className={`group grid min-h-[70vh] items-center gap-10 overflow-hidden rounded-2xl border border-slate-700 bg-slate-800 p-5 md:grid-cols-2 md:p-10 lg:gap-20 ${
@@ -37,7 +57,8 @@ function ProjectCard({ title, category, description, tech, github, live, image, 
               key={projectImages[activeImage]}
               src={projectImages[activeImage]}
               alt={`${title} project screenshot ${activeImage + 1}`}
-              className={`h-full w-full object-contain transition duration-500 group-hover:scale-[1.03] project-image-slide-${slideDirection}`}
+              className={`h-full w-full cursor-zoom-in object-contain transition duration-500 group-hover:scale-[1.03] project-image-slide-${slideDirection}`}
+              onClick={() => setIsLightboxOpen(true)}
               onError={(event) => {
                 event.currentTarget.hidden = true;
                 event.currentTarget.nextElementSibling.hidden = false;
@@ -96,6 +117,37 @@ function ProjectCard({ title, category, description, tech, github, live, image, 
           </div>
         )}
       </div>
+
+      {isLightboxOpen &&
+        createPortal(
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-label={`${title} enlarged screenshot`}
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-slate-950/90 p-4 backdrop-blur-sm"
+            onClick={() => setIsLightboxOpen(false)}
+          >
+            <button
+              type="button"
+              onClick={() => setIsLightboxOpen(false)}
+              aria-label="Close enlarged screenshot"
+              className="absolute right-4 top-4 rounded-full border border-white/70 bg-white/95 p-2 text-slate-950 shadow-lg transition hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <FiX size={22} />
+            </button>
+            <div
+              className="flex max-h-[92vh] max-w-[92vw] items-center justify-center"
+              onClick={(event) => event.stopPropagation()}
+            >
+              <img
+                src={projectImages[activeImage]}
+                alt={`${title} enlarged screenshot ${activeImage + 1}`}
+                className="max-h-[88vh] max-w-[90vw] object-contain"
+              />
+            </div>
+          </div>,
+          document.body,
+        )}
 
       <div className="max-w-xl py-4">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-blue-400">
